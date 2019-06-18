@@ -5,6 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Feedback</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 id="title">Feedback Form</h1>
+      <p id="description">
+        Please give your Feedback about my Portfolio page.
+      </p>
+      <form id="survey-form">
+        <div class="name-group">
+          <label id="name-label" for="name">* Name: </label>
+          <input type="text" id="name" placeholder="Name" required />
+        </div>
+
+        <div class="email-group">
+          <label id="email-label" for="email">* Email: </label>
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+
+        <div class="rating-group">
+          <label id="number-label" for="rating"
+            >* Overall Rating (0 - 10)</label
+          >
+          <input
+            type="number"
+            id="number"
+            min="0"
+            max="10"
+            placeholder="Rating"
+          />
+        </div>
+
+        <div class="dropdown-group">
+          <label for="dropdown"
+            >Are you impressed with the displayed projects.</label
+          >
+          <select id="dropdown">
+            <option value="1">Impressed</option>
+            <option value="2">Neutral</option>
+            <option value="3">Not impressed</option>
+          </select>
+        </div>
+
+        <div class="like-group">
+          <p>What do you like the most in the projects?</p>
+          <input
+            id="visual-design"
+            type="radio"
+            name="like"
+            value="visual-design"
+          />
+          <label for="visual-design">Visual Design</label>
+
+          <input
+            id="performance"
+            type="radio"
+            name="like"
+            value="performance"
+          />
+          <label for="performance">Performance</label>
+
+          <input
+            id="responsiveness"
+            type="radio"
+            name="like"
+            value="responsiveness"
+          />
+          <label for="responsiveness">Responsiveness</label>
+        </div>
+
+        <div class="checkbox-group">
+          Things that should be improved in the future
+
+          <div>
+            <input type="checkbox" name="improve" value="Visual Design" />
+            <label for="">Visual Design</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="improve" value="Performance" />
+            <label for="">Performance</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="improve" value="Responsiveness" />
+            <label for="">Responsiveness</label>
+          </div>
+
+          <div class="comments-group">
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea name="comments" id="" cols="30" rows="4"></textarea>
+          </div>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+  </body>
 </html>
